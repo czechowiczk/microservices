@@ -6,3 +6,15 @@ spring:
     name: customer
   banner:
     location: banner.txt
+  datasource:
+    password: password
+    url: jdbc:postgresql://localhost:5432/customer
+    username: amigoscode
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
